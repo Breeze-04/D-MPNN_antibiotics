@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+<style>
+text { font-family: Arial, Helvetica, sans-serif; }
+.axis { stroke: #65747F; stroke-width: 1.2; }
+.grid { stroke: #D9E0E5; stroke-width: 1; }
+</style>
+<text x="60.00" y="42.00" font-size="27" font-weight="700" text-anchor="start" fill="#24303A">Baseline vs Attention</text>
+<text x="60.00" y="68.00" font-size="14" font-weight="400" text-anchor="start" fill="#64727E">D-MPNN molecular MIC regression · controlled comparison on the same test split</text>
+<line x1="65.00" y1="96.00" x2="101.00" y2="96.00" stroke="#2878B5" stroke-width="3" opacity="1.0"/>
+<text x="110.00" y="101.00" font-size="13" font-weight="400" text-anchor="start" fill="#24303A">Baseline</text>
+<line x1="205.00" y1="96.00" x2="241.00" y2="96.00" stroke="#E67E22" stroke-width="3" opacity="1.0"/>
+<text x="250.00" y="101.00" font-size="13" font-weight="400" text-anchor="start" fill="#24303A">Attention</text>
+<line x1="365.00" y1="96.00" x2="401.00" y2="96.00" stroke="#24303A" stroke-width="2.5" opacity="1.0"/>
+<text x="410.00" y="101.00" font-size="13" font-weight="400" text-anchor="start" fill="#24303A">Validation</text>
+<line x1="520.00" y1="96.00" x2="556.00" y2="96.00" stroke="#24303A" stroke-width="2.5" opacity="1.0" stroke-dasharray="7 5"/>
+<text x="565.00" y="101.00" font-size="13" font-weight="400" text-anchor="start" fill="#24303A">Training</text>
+<text x="795.00" y="101.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">○ best validation-loss epoch</text>
+<text x="60.00" y="132.00" font-size="20" font-weight="700" text-anchor="start" fill="#24303A">A  Learning dynamics</text>
+<text x="60.00" y="147.00" font-size="16" font-weight="700" text-anchor="start" fill="#24303A">A1  Validation R²</text>
+<line x1="128.00" y1="370.00" x2="803.00" y2="370.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="375.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.00</text>
+<line x1="128.00" y1="318.75" x2="803.00" y2="318.75" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="323.75" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.20</text>
+<line x1="128.00" y1="267.50" x2="803.00" y2="267.50" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="272.50" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.40</text>
+<line x1="128.00" y1="216.25" x2="803.00" y2="216.25" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="221.25" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.60</text>
+<line x1="128.00" y1="165.00" x2="803.00" y2="165.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="170.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.80</text>
+<line x1="128.00" y1="370.00" x2="128.00" y2="375.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="128.00" y="392.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">1</text>
+<line x1="294.15" y1="370.00" x2="294.15" y2="375.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="294.15" y="392.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">17</text>
+<line x1="470.69" y1="370.00" x2="470.69" y2="375.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="470.69" y="392.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">34</text>
+<line x1="636.85" y1="370.00" x2="636.85" y2="375.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="636.85" y="392.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">50</text>
+<line x1="803.00" y1="370.00" x2="803.00" y2="375.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="803.00" y="392.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">66</text>
+<line x1="128.00" y1="165.00" x2="128.00" y2="370.00" stroke="#64727E" stroke-width="1.2" opacity="1.0"/>
+<line x1="128.00" y1="370.00" x2="803.00" y2="370.00" stroke="#64727E" stroke-width="1.2" opacity="1.0"/>
+<text x="78.00" y="267.50" font-size="13" font-weight="400" text-anchor="middle" fill="#24303A" transform="rotate(-90 78.00 267.50)">Validation R²</text>
+<polyline points="128.00,351.98 138.38,347.78 148.77,301.70 159.15,279.92 169.54,279.20 179.92,279.51 190.31,258.03 200.69,255.18 211.08,249.07 221.46,252.07 231.85,233.79 242.23,229.55 252.62,236.99 263.00,224.67 273.38,221.44 283.77,217.43 294.15,209.87 304.54,210.56 314.92,213.37 325.31,199.72 335.69,211.56 346.08,197.32 356.46,204.87 366.85,194.54 377.23,192.30 387.62,195.46 398.00,190.08 408.38,189.65 418.77,189.26 429.15,188.28 439.54,191.23 449.92,200.94 460.31,187.54 470.69,194.22 481.08,186.18 491.46,187.50 501.85,185.29 512.23,183.63 522.62,184.89 533.00,186.58 543.38,183.68 553.77,184.23 564.15,187.72 574.54,183.62 584.92,183.42 595.31,186.17 605.69,183.23 616.08,184.08 626.46,181.62 636.85,184.02 647.23,180.80 657.62,183.99 668.00,184.00 678.38,184.89 688.77,184.79 699.15,182.18 709.54,183.61 719.92,182.82 730.31,183.49 740.69,184.48 751.08,184.85 761.46,182.68 771.85,182.46 782.23,183.14 792.62,190.21 803.00,185.40" fill="none" stroke="#2878B5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="128.00,351.13 138.38,355.44 148.77,292.27 159.15,280.28 169.54,285.44 179.92,270.41 190.31,246.09 200.69,237.58 211.08,231.68 221.46,220.72 231.85,209.96 242.23,206.20 252.62,217.74 263.00,196.54 273.38,203.19 283.77,192.64 294.15,193.06 304.54,193.64 314.92,196.07 325.31,200.55 335.69,191.52 346.08,189.48 356.46,189.25 366.85,184.23 377.23,187.46 387.62,187.18 398.00,181.66 408.38,179.16 418.77,187.96 429.15,179.35 439.54,181.67 449.92,181.21 460.31,177.95 470.69,181.08 481.08,177.96 491.46,177.82 501.85,180.87 512.23,182.38 522.62,177.99 533.00,179.95 543.38,181.95 553.77,177.87 564.15,177.87 574.54,177.04 584.92,179.99 595.31,180.42 605.69,183.34 616.08,179.37 626.46,178.46 636.85,179.70 647.23,178.37 657.62,181.61 668.00,179.51 678.38,180.68 688.77,181.80 699.15,181.54 709.54,185.27 719.92,185.09 730.31,185.03" fill="none" stroke="#E67E22" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="647.23" y1="165.00" x2="647.23" y2="370.00" stroke="#2878B5" stroke-width="1.2" opacity="0.45" stroke-dasharray="4 5"/>
+<circle cx="647.23" cy="180.80" r="5.00" fill="white" stroke="#2878B5" stroke-width="2.5"/>
+<text x="654.23" y="172.80" font-size="11" font-weight="400" text-anchor="start" fill="#2878B5">best e51</text>
+<line x1="574.54" y1="165.00" x2="574.54" y2="370.00" stroke="#E67E22" stroke-width="1.2" opacity="0.45" stroke-dasharray="4 5"/>
+<circle cx="574.54" cy="177.04" r="5.00" fill="white" stroke="#E67E22" stroke-width="2.5"/>
+<text x="581.54" y="169.04" font-size="11" font-weight="400" text-anchor="start" fill="#E67E22">best e44</text>
+<text x="60.00" y="457.00" font-size="16" font-weight="700" text-anchor="start" fill="#24303A">A2  Normalized MSE loss</text>
+<line x1="128.00" y1="680.00" x2="803.00" y2="680.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="685.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.00</text>
+<line x1="128.00" y1="628.75" x2="803.00" y2="628.75" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="633.75" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.30</text>
+<line x1="128.00" y1="577.50" x2="803.00" y2="577.50" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="582.50" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.60</text>
+<line x1="128.00" y1="526.25" x2="803.00" y2="526.25" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="531.25" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">0.90</text>
+<line x1="128.00" y1="475.00" x2="803.00" y2="475.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="118.00" y="480.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">1.20</text>
+<line x1="128.00" y1="680.00" x2="128.00" y2="685.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="128.00" y="702.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">1</text>
+<line x1="294.15" y1="680.00" x2="294.15" y2="685.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="294.15" y="702.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">17</text>
+<line x1="470.69" y1="680.00" x2="470.69" y2="685.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="470.69" y="702.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">34</text>
+<line x1="636.85" y1="680.00" x2="636.85" y2="685.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="636.85" y="702.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">50</text>
+<line x1="803.00" y1="680.00" x2="803.00" y2="685.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="803.00" y="702.00" font-size="12" font-weight="400" text-anchor="middle" fill="#64727E">66</text>
+<line x1="128.00" y1="475.00" x2="128.00" y2="680.00" stroke="#64727E" stroke-width="1.2" opacity="1.0"/>
+<line x1="128.00" y1="680.00" x2="803.00" y2="680.00" stroke="#64727E" stroke-width="1.2" opacity="1.0"/>
+<text x="78.00" y="577.50" font-size="13" font-weight="400" text-anchor="middle" fill="#24303A" transform="rotate(-90 78.00 577.50)">Loss</text>
+<text x="465.50" y="722.00" font-size="13" font-weight="400" text-anchor="middle" fill="#24303A">Epoch</text>
+<polyline points="128.00,505.96 138.38,509.03 148.77,542.69 159.15,558.60 169.54,559.12 179.92,558.90 190.31,574.59 200.69,576.67 211.08,581.14 221.46,578.94 231.85,592.30 242.23,595.40 252.62,589.96 263.00,598.97 273.38,601.32 283.77,604.25 294.15,609.77 304.54,609.28 314.92,607.22 325.31,617.19 335.69,608.54 346.08,618.95 356.46,613.43 366.85,620.98 377.23,622.61 387.62,620.31 398.00,624.24 408.38,624.55 418.77,624.83 429.15,625.55 439.54,623.40 449.92,616.30 460.31,626.09 470.69,621.21 481.08,627.09 491.46,626.12 501.85,627.73 512.23,628.95 522.62,628.03 533.00,626.79 543.38,628.91 553.77,628.51 564.15,625.96 574.54,628.95 584.92,629.10 595.31,627.09 605.69,629.24 616.08,628.62 626.46,630.42 636.85,628.66 647.23,631.02 657.62,628.68 668.00,628.68 678.38,628.03 688.77,628.10 699.15,630.01 709.54,628.96 719.92,629.54 730.31,629.05 740.69,628.33 751.08,628.06 761.46,629.64 771.85,629.80 782.23,629.30 792.62,624.14 803.00,627.65" fill="none" stroke="#2878B5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="128.00,506.58 138.38,503.43 148.77,549.58 159.15,558.34 169.54,554.57 179.92,565.55 190.31,583.32 200.69,589.53 211.08,593.84 221.46,601.85 231.85,609.71 242.23,612.46 252.62,604.03 263.00,619.52 273.38,614.66 283.77,622.36 294.15,622.06 304.54,621.63 314.92,619.86 325.31,616.59 335.69,623.18 346.08,624.68 356.46,624.84 366.85,628.51 377.23,626.15 387.62,626.35 398.00,630.38 408.38,632.21 418.77,625.79 429.15,632.07 439.54,630.38 449.92,630.72 460.31,633.10 470.69,630.81 481.08,633.09 491.46,633.19 501.85,630.97 512.23,629.86 522.62,633.07 533.00,631.64 543.38,630.17 553.77,633.16 564.15,633.16 574.54,633.76 584.92,631.60 595.31,631.29 605.69,629.16 616.08,632.06 626.46,632.73 636.85,631.82 647.23,632.79 657.62,630.42 668.00,631.96 678.38,631.10 688.77,630.29 699.15,630.47 709.54,627.75 719.92,627.88 730.31,627.93" fill="none" stroke="#E67E22" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="128.00,513.52 138.38,531.78 148.77,547.80 159.15,568.74 169.54,578.43 179.92,583.38 190.31,581.42 200.69,589.80 211.08,593.72 221.46,596.78 231.85,602.64 242.23,606.15 252.62,609.03 263.00,614.07 273.38,613.88 283.77,618.68 294.15,619.43 304.54,620.94 314.92,626.85 325.31,627.71 335.69,629.31 346.08,632.90 356.46,633.31 366.85,635.08 377.23,637.23 387.62,638.71 398.00,640.34 408.38,640.90 418.77,643.02 429.15,641.05 439.54,643.02 449.92,643.91 460.31,645.03 470.69,643.93 481.08,647.36 491.46,648.30 501.85,649.34 512.23,649.89 522.62,650.23 533.00,650.68 543.38,652.18 553.77,650.39 564.15,650.27 574.54,652.68 584.92,654.06 595.31,654.05 605.69,654.08 616.08,653.44 626.46,655.42 636.85,654.41 647.23,656.36 657.62,656.24 668.00,655.68 678.38,656.39 688.77,656.60 699.15,656.76 709.54,656.22 719.92,658.24 730.31,658.45 740.69,658.94 751.08,659.34 761.46,657.93 771.85,658.28 782.23,659.19 792.62,659.59 803.00,658.84" fill="none" stroke="#2878B5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polyline points="128.00,513.67 138.38,531.94 148.77,557.68 159.15,569.81 169.54,580.23 179.92,589.53 190.31,587.28 200.69,600.01 211.08,604.96 221.46,612.85 231.85,619.76 242.23,617.49 252.62,622.73 263.00,628.80 273.38,631.28 283.77,634.40 294.15,636.61 304.54,637.67 314.92,640.38 325.31,637.50 335.69,640.63 346.08,642.17 356.46,642.70 366.85,644.07 377.23,646.40 387.62,646.86 398.00,647.97 408.38,648.52 418.77,649.67 429.15,647.80 439.54,650.61 449.92,650.43 460.31,651.19 470.69,650.91 481.08,652.50 491.46,653.11 501.85,654.43 512.23,654.98 522.62,655.44 533.00,655.20 543.38,655.30 553.77,655.45 564.15,655.21 574.54,656.54 584.92,658.24 595.31,658.41 605.69,658.19 616.08,658.16 626.46,659.43 636.85,659.58 647.23,660.05 657.62,660.34 668.00,660.08 678.38,660.76 688.77,660.74 699.15,660.71 709.54,660.81 719.92,660.78 730.31,661.28" fill="none" stroke="#E67E22" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<line x1="647.23" y1="475.00" x2="647.23" y2="680.00" stroke="#2878B5" stroke-width="1.2" opacity="0.45" stroke-dasharray="4 5"/>
+<circle cx="647.23" cy="631.02" r="5.00" fill="white" stroke="#2878B5" stroke-width="2.5"/>
+<text x="654.23" y="623.02" font-size="11" font-weight="400" text-anchor="start" fill="#2878B5">best e51</text>
+<line x1="574.54" y1="475.00" x2="574.54" y2="680.00" stroke="#E67E22" stroke-width="1.2" opacity="0.45" stroke-dasharray="4 5"/>
+<circle cx="574.54" cy="633.76" r="5.00" fill="white" stroke="#E67E22" stroke-width="2.5"/>
+<text x="581.54" y="625.76" font-size="11" font-weight="400" text-anchor="start" fill="#E67E22">best e44</text>
+<line x1="850.00" y1="125.00" x2="850.00" y2="735.00" stroke="#D9E0E5" stroke-width="1.2" opacity="1.0"/>
+<text x="900.00" y="132.00" font-size="20" font-weight="700" text-anchor="start" fill="#24303A">B  Test-set performance</text>
+<text x="1530.00" y="132.00" font-size="13" font-weight="400" text-anchor="end" fill="#64727E">n = 331</text>
+<text x="900.00" y="175.00" font-size="18" font-weight="700" text-anchor="start" fill="#24303A">Test R²</text>
+<text x="1530.00" y="175.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">higher is better ↑</text>
+<line x1="1004.00" y1="213.00" x2="1512.00" y2="213.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<line x1="1004.00" y1="209.00" x2="1004.00" y2="217.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1004.00" y="204.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.00</text>
+<line x1="1173.33" y1="209.00" x2="1173.33" y2="217.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1173.33" y="204.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.27</text>
+<line x1="1342.67" y1="209.00" x2="1342.67" y2="217.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1342.67" y="204.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.53</text>
+<line x1="1512.00" y1="209.00" x2="1512.00" y2="217.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1512.00" y="204.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.80</text>
+<text x="992.00" y="250.00" font-size="13" font-weight="400" text-anchor="end" fill="#24303A">Baseline</text>
+<line x1="1004.00" y1="245.00" x2="1384.68" y2="245.00" stroke="#2878B5" stroke-width="5" opacity="0.3"/>
+<circle cx="1384.68" cy="245.00" r="6.00" fill="#2878B5"/>
+<text x="1395.68" y="250.00" font-size="13" font-weight="700" text-anchor="start" fill="#2878B5">0.5995</text>
+<text x="992.00" y="286.00" font-size="13" font-weight="400" text-anchor="end" fill="#24303A">Attention</text>
+<line x1="1004.00" y1="281.00" x2="1390.23" y2="281.00" stroke="#E67E22" stroke-width="5" opacity="0.3"/>
+<circle cx="1390.23" cy="281.00" r="6.00" fill="#E67E22"/>
+<text x="1401.23" y="286.00" font-size="13" font-weight="700" text-anchor="start" fill="#E67E22">0.6082</text>
+<text x="1004.00" y="312.00" font-size="13" font-weight="700" text-anchor="start" fill="#E67E22">Attention change: +0.0087</text>
+<line x1="900.00" y1="326.00" x2="1530.00" y2="326.00" stroke="#EEF2F5" stroke-width="1.0" opacity="1.0"/>
+<text x="900.00" y="360.00" font-size="18" font-weight="700" text-anchor="start" fill="#24303A">Test RMSE</text>
+<text x="1530.00" y="360.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">lower is better ↓</text>
+<line x1="1004.00" y1="398.00" x2="1512.00" y2="398.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<line x1="1004.00" y1="394.00" x2="1004.00" y2="402.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1004.00" y="389.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.00</text>
+<line x1="1173.33" y1="394.00" x2="1173.33" y2="402.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1173.33" y="389.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.83</text>
+<line x1="1342.67" y1="394.00" x2="1342.67" y2="402.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1342.67" y="389.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">1.67</text>
+<line x1="1512.00" y1="394.00" x2="1512.00" y2="402.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1512.00" y="389.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">2.50</text>
+<text x="992.00" y="435.00" font-size="13" font-weight="400" text-anchor="end" fill="#24303A">Baseline</text>
+<line x1="1004.00" y1="430.00" x2="1429.23" y2="430.00" stroke="#2878B5" stroke-width="5" opacity="0.3"/>
+<circle cx="1429.23" cy="430.00" r="6.00" fill="#2878B5"/>
+<text x="1440.23" y="435.00" font-size="13" font-weight="700" text-anchor="start" fill="#2878B5">2.0926</text>
+<text x="992.00" y="471.00" font-size="13" font-weight="400" text-anchor="end" fill="#24303A">Attention</text>
+<line x1="1004.00" y1="466.00" x2="1424.57" y2="466.00" stroke="#E67E22" stroke-width="5" opacity="0.3"/>
+<circle cx="1424.57" cy="466.00" r="6.00" fill="#E67E22"/>
+<text x="1435.57" y="471.00" font-size="13" font-weight="700" text-anchor="start" fill="#E67E22">2.0697</text>
+<text x="1004.00" y="497.00" font-size="13" font-weight="700" text-anchor="start" fill="#E67E22">Attention reduction: 1.10%</text>
+<line x1="900.00" y1="511.00" x2="1530.00" y2="511.00" stroke="#EEF2F5" stroke-width="1.0" opacity="1.0"/>
+<text x="900.00" y="545.00" font-size="18" font-weight="700" text-anchor="start" fill="#24303A">Test MAE</text>
+<text x="1530.00" y="545.00" font-size="12" font-weight="400" text-anchor="end" fill="#64727E">lower is better ↓</text>
+<line x1="1004.00" y1="583.00" x2="1512.00" y2="583.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<line x1="1004.00" y1="579.00" x2="1004.00" y2="587.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1004.00" y="574.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.00</text>
+<line x1="1173.33" y1="579.00" x2="1173.33" y2="587.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1173.33" y="574.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">0.67</text>
+<line x1="1342.67" y1="579.00" x2="1342.67" y2="587.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1342.67" y="574.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">1.33</text>
+<line x1="1512.00" y1="579.00" x2="1512.00" y2="587.00" stroke="#64727E" stroke-width="1.0" opacity="1.0"/>
+<text x="1512.00" y="574.00" font-size="10" font-weight="400" text-anchor="middle" fill="#64727E">2.00</text>
+<text x="992.00" y="620.00" font-size="13" font-weight="400" text-anchor="end" fill="#24303A">Baseline</text>
+<line x1="1004.00" y1="615.00" x2="1391.11" y2="615.00" stroke="#2878B5" stroke-width="5" opacity="0.3"/>
+<circle cx="1391.11" cy="615.00" r="6.00" fill="#2878B5"/>
+<text x="1402.11" y="620.00" font-size="13" font-weight="700" text-anchor="start" fill="#2878B5">1.5240</text>
+<text x="992.00" y="656.00" font-size="13" font-weight="400" text-anchor="end" fill="#24303A">Attention</text>
+<line x1="1004.00" y1="651.00" x2="1379.36" y2="651.00" stroke="#E67E22" stroke-width="5" opacity="0.3"/>
+<circle cx="1379.36" cy="651.00" r="6.00" fill="#E67E22"/>
+<text x="1390.36" y="656.00" font-size="13" font-weight="700" text-anchor="start" fill="#E67E22">1.4778</text>
+<text x="1004.00" y="682.00" font-size="13" font-weight="700" text-anchor="start" fill="#E67E22">Attention reduction: 3.03%</text>
+<line x1="60.00" y1="754.00" x2="1530.00" y2="754.00" stroke="#D9E0E5" stroke-width="1.0" opacity="1.0"/>
+<text x="60.00" y="780.00" font-size="12" font-weight="400" text-anchor="start" fill="#64727E">Same data split and training protocol; checkpoints selected by validation loss. Positive R² change and RMSE/MAE reductions favor Attention.</text>
+</svg>

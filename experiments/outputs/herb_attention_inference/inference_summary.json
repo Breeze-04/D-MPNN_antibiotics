@@ -1,0 +1,35 @@
+{
+  "task": "Attention D-MPNN inference and molecule ranking",
+  "ranking_definition": {
+    "rank_high_mic": "1 = highest predicted MIC (typically weakest predicted antibacterial activity)",
+    "rank_low_mic": "1 = lowest predicted MIC (typically strongest predicted antibacterial activity)"
+  },
+  "input": {
+    "data_path": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\data\\herb_compound.csv",
+    "encoding": "cp1252",
+    "rows": 14985,
+    "smiles_column": "Smiles",
+    "status_counts_by_row": {
+      "predicted": 14935,
+      "excluded_multifragment": 35,
+      "invalid_smiles": 15
+    }
+  },
+  "model": {
+    "model_path": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\attention_smoke\\best_model.pt",
+    "sha256": "9262f59c4e119db826b44f50172ba2550ab1eae2ffbc3410ac33097d47c794a1",
+    "architecture": "BondMessagePassing -> AttentiveAggregation -> RegressionFFN"
+  },
+  "ranking": {
+    "unique_eligible_molecules": 1009,
+    "top_k_file_rows": 50,
+    "model_dataset_overlaps": 15,
+    "model_training_split_overlaps": 14
+  },
+  "outputs": {
+    "all_rows": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\herb_attention_inference\\herb_compound_predictions.csv",
+    "unique_molecule_ranking": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\herb_attention_inference\\herb_molecule_ranking.csv",
+    "top_high_mic": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\herb_attention_inference\\top_highest_predicted_mic.csv",
+    "excluded_structures": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\herb_attention_inference\\excluded_structures.csv"
+  }
+}

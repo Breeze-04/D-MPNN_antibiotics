@@ -1,0 +1,37 @@
+{
+  "data_path": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\data\\chembl_ecoli_MIC_clean_3296.csv",
+  "smiles_column": "canonical_smiles",
+  "target_columns": [
+    "log2_mic"
+  ],
+  "output_dir": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\attention_smoke",
+  "split_type": "RANDOM",
+  "split_sizes": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "seed": 42,
+  "epochs": 100,
+  "patience": 15,
+  "batch_size": 64,
+  "num_workers": 0,
+  "message_hidden_dim": 300,
+  "depth": 3,
+  "ffn_hidden_dim": 300,
+  "ffn_num_layers": 1,
+  "dropout": 0.0,
+  "accelerator": "cpu",
+  "architecture": "BondMessagePassing -> AttentiveAggregation -> RegressionFFN",
+  "attention": {
+    "implementation": "chemprop.nn.AttentiveAggregation",
+    "input_output_dim": 300,
+    "added_trainable_parameters": 301
+  },
+  "best_checkpoint": "E:\\programming_study\\Cambridge_2026_SummerSchool\\chemprop-main\\experiments\\outputs\\attention_smoke\\checkpoints\\best-epoch=43-val_loss=0.2707.ckpt",
+  "versions": {
+    "chemprop": "2.3.1",
+    "torch": "2.13.0+cpu",
+    "lightning": "2.6.5"
+  }
+}

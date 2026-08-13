@@ -1,0 +1,748 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="610" viewBox="0 0 1440 610">
+<style>
+text { font-family: Arial, Helvetica, sans-serif; }
+.axis { stroke: #7A828A; stroke-width: 1.2; }
+.grid { stroke: #C7CDD3; stroke-width: 0.7; stroke-opacity: 0.42; }
+.point { fill: #2F6B9A; fill-opacity: 0.60; }
+</style>
+<text x="720.00" y="35.00" text-anchor="middle" font-size="21" font-weight="bold" fill="#24292F">D-MPNN baseline test-set diagnostics</text>
+<text x="720.00" y="59.00" text-anchor="middle" font-size="13" font-weight="normal" fill="#7A828A">E. coli ATCC 25922 MIC regression · n = 331 test molecules</text>
+<text x="92.00" y="91.00" text-anchor="start" font-size="16" font-weight="bold" fill="#24292F">A  Observed vs predicted</text>
+<text x="805.00" y="91.00" text-anchor="start" font-size="16" font-weight="bold" fill="#24292F">B  Residuals vs observed</text>
+<line x1="92" y1="502" x2="622" y2="502" class="axis"/>
+<line x1="92" y1="112" x2="92" y2="502" class="axis"/>
+<line x1="92.00" y1="112" x2="92.00" y2="502" class="grid"/>
+<line x1="92" y1="502.00" x2="622" y2="502.00" class="grid"/>
+<text x="92.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">-11.0</text>
+<text x="79.00" y="506.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">-11.0</text>
+<line x1="198.00" y1="112" x2="198.00" y2="502" class="grid"/>
+<line x1="92" y1="424.00" x2="622" y2="424.00" class="grid"/>
+<text x="198.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">-6.5</text>
+<text x="79.00" y="428.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">-6.5</text>
+<line x1="304.00" y1="112" x2="304.00" y2="502" class="grid"/>
+<line x1="92" y1="346.00" x2="622" y2="346.00" class="grid"/>
+<text x="304.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">-1.9</text>
+<text x="79.00" y="350.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">-1.9</text>
+<line x1="410.00" y1="112" x2="410.00" y2="502" class="grid"/>
+<line x1="92" y1="268.00" x2="622" y2="268.00" class="grid"/>
+<text x="410.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">2.6</text>
+<text x="79.00" y="272.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">2.6</text>
+<line x1="516.00" y1="112" x2="516.00" y2="502" class="grid"/>
+<line x1="92" y1="190.00" x2="622" y2="190.00" class="grid"/>
+<text x="516.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">7.1</text>
+<text x="79.00" y="194.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">7.1</text>
+<line x1="622.00" y1="112" x2="622.00" y2="502" class="grid"/>
+<line x1="92" y1="112.00" x2="622" y2="112.00" class="grid"/>
+<text x="622.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">11.7</text>
+<text x="79.00" y="116.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">11.7</text>
+<text x="357.00" y="560.00" text-anchor="middle" font-size="14" font-weight="normal" fill="#24292F">Observed log2(MIC [µg/mL])</text>
+<text x="28.00" y="307.00" text-anchor="middle" font-size="14" font-weight="normal" fill="#24292F" transform="rotate(-90 28.00 307.00)">Predicted log2(MIC [µg/mL])</text>
+<line x1="92" y1="502" x2="622" y2="112" stroke="#24292F" stroke-width="1.6" stroke-dasharray="7 5"/>
+<circle cx="419.21" cy="248.48" r="3.2" class="point"/>
+<circle cx="372.45" cy="283.24" r="3.2" class="point"/>
+<circle cx="465.97" cy="286.82" r="3.2" class="point"/>
+<circle cx="489.34" cy="191.02" r="3.2" class="point"/>
+<circle cx="489.34" cy="172.36" r="3.2" class="point"/>
+<circle cx="442.59" cy="176.00" r="3.2" class="point"/>
+<circle cx="465.97" cy="267.73" r="3.2" class="point"/>
+<circle cx="395.83" cy="239.62" r="3.2" class="point"/>
+<circle cx="340.69" cy="288.51" r="3.2" class="point"/>
+<circle cx="489.34" cy="234.70" r="3.2" class="point"/>
+<circle cx="419.21" cy="301.28" r="3.2" class="point"/>
+<circle cx="535.30" cy="276.00" r="3.2" class="point"/>
+<circle cx="349.07" cy="307.79" r="3.2" class="point"/>
+<circle cx="395.83" cy="231.27" r="3.2" class="point"/>
+<circle cx="489.34" cy="232.59" r="3.2" class="point"/>
+<circle cx="457.64" cy="237.05" r="3.2" class="point"/>
+<circle cx="409.51" cy="280.10" r="3.2" class="point"/>
+<circle cx="442.59" cy="274.47" r="3.2" class="point"/>
+<circle cx="489.34" cy="201.79" r="3.2" class="point"/>
+<circle cx="419.21" cy="253.63" r="3.2" class="point"/>
+<circle cx="409.51" cy="280.84" r="3.2" class="point"/>
+<circle cx="419.21" cy="221.89" r="3.2" class="point"/>
+<circle cx="419.21" cy="239.04" r="3.2" class="point"/>
+<circle cx="395.83" cy="261.19" r="3.2" class="point"/>
+<circle cx="442.59" cy="222.23" r="3.2" class="point"/>
+<circle cx="481.02" cy="217.38" r="3.2" class="point"/>
+<circle cx="442.59" cy="228.94" r="3.2" class="point"/>
+<circle cx="372.45" cy="333.86" r="3.2" class="point"/>
+<circle cx="410.88" cy="241.09" r="3.2" class="point"/>
+<circle cx="535.30" cy="178.02" r="3.2" class="point"/>
+<circle cx="302.32" cy="262.66" r="3.2" class="point"/>
+<circle cx="559.48" cy="188.90" r="3.2" class="point"/>
+<circle cx="512.72" cy="213.53" r="3.2" class="point"/>
+<circle cx="419.21" cy="249.29" r="3.2" class="point"/>
+<circle cx="465.97" cy="258.27" r="3.2" class="point"/>
+<circle cx="395.83" cy="255.10" r="3.2" class="point"/>
+<circle cx="504.40" cy="249.91" r="3.2" class="point"/>
+<circle cx="349.07" cy="385.23" r="3.2" class="point"/>
+<circle cx="465.97" cy="227.18" r="3.2" class="point"/>
+<circle cx="481.02" cy="249.67" r="3.2" class="point"/>
+<circle cx="294.79" cy="395.30" r="3.2" class="point"/>
+<circle cx="186.23" cy="434.77" r="3.2" class="point"/>
+<circle cx="395.83" cy="278.11" r="3.2" class="point"/>
+<circle cx="457.64" cy="217.02" r="3.2" class="point"/>
+<circle cx="465.97" cy="250.72" r="3.2" class="point"/>
+<circle cx="442.59" cy="242.62" r="3.2" class="point"/>
+<circle cx="488.54" cy="141.31" r="3.2" class="point"/>
+<circle cx="372.45" cy="278.70" r="3.2" class="point"/>
+<circle cx="512.72" cy="207.41" r="3.2" class="point"/>
+<circle cx="395.83" cy="277.91" r="3.2" class="point"/>
+<circle cx="434.26" cy="240.68" r="3.2" class="point"/>
+<circle cx="372.45" cy="200.20" r="3.2" class="point"/>
+<circle cx="139.47" cy="319.09" r="3.2" class="point"/>
+<circle cx="512.72" cy="220.77" r="3.2" class="point"/>
+<circle cx="434.26" cy="222.97" r="3.2" class="point"/>
+<circle cx="465.97" cy="212.11" r="3.2" class="point"/>
+<circle cx="419.21" cy="252.75" r="3.2" class="point"/>
+<circle cx="481.02" cy="228.71" r="3.2" class="point"/>
+<circle cx="489.34" cy="197.81" r="3.2" class="point"/>
+<circle cx="536.10" cy="182.44" r="3.2" class="point"/>
+<circle cx="465.97" cy="213.45" r="3.2" class="point"/>
+<circle cx="457.64" cy="229.11" r="3.2" class="point"/>
+<circle cx="394.98" cy="218.63" r="3.2" class="point"/>
+<circle cx="349.07" cy="320.19" r="3.2" class="point"/>
+<circle cx="302.32" cy="336.79" r="3.2" class="point"/>
+<circle cx="582.06" cy="155.39" r="3.2" class="point"/>
+<circle cx="489.34" cy="224.78" r="3.2" class="point"/>
+<circle cx="536.10" cy="212.65" r="3.2" class="point"/>
+<circle cx="512.72" cy="212.00" r="3.2" class="point"/>
+<circle cx="395.83" cy="266.52" r="3.2" class="point"/>
+<circle cx="372.45" cy="293.08" r="3.2" class="point"/>
+<circle cx="512.72" cy="222.91" r="3.2" class="point"/>
+<circle cx="271.41" cy="246.89" r="3.2" class="point"/>
+<circle cx="541.45" cy="215.69" r="3.2" class="point"/>
+<circle cx="512.72" cy="218.45" r="3.2" class="point"/>
+<circle cx="395.83" cy="275.06" r="3.2" class="point"/>
+<circle cx="465.97" cy="251.10" r="3.2" class="point"/>
+<circle cx="457.64" cy="242.16" r="3.2" class="point"/>
+<circle cx="387.50" cy="196.69" r="3.2" class="point"/>
+<circle cx="419.21" cy="287.16" r="3.2" class="point"/>
+<circle cx="395.83" cy="262.50" r="3.2" class="point"/>
+<circle cx="465.97" cy="272.31" r="3.2" class="point"/>
+<circle cx="395.83" cy="237.19" r="3.2" class="point"/>
+<circle cx="465.97" cy="250.43" r="3.2" class="point"/>
+<circle cx="434.26" cy="244.04" r="3.2" class="point"/>
+<circle cx="489.34" cy="209.58" r="3.2" class="point"/>
+<circle cx="349.07" cy="247.98" r="3.2" class="point"/>
+<circle cx="434.26" cy="226.09" r="3.2" class="point"/>
+<circle cx="489.34" cy="254.42" r="3.2" class="point"/>
+<circle cx="489.34" cy="236.91" r="3.2" class="point"/>
+<circle cx="512.72" cy="227.68" r="3.2" class="point"/>
+<circle cx="465.97" cy="376.97" r="3.2" class="point"/>
+<circle cx="325.70" cy="316.79" r="3.2" class="point"/>
+<circle cx="349.07" cy="278.64" r="3.2" class="point"/>
+<circle cx="442.59" cy="299.35" r="3.2" class="point"/>
+<circle cx="395.83" cy="226.46" r="3.2" class="point"/>
+<circle cx="372.45" cy="318.70" r="3.2" class="point"/>
+<circle cx="325.70" cy="289.90" r="3.2" class="point"/>
+<circle cx="349.07" cy="300.72" r="3.2" class="point"/>
+<circle cx="325.70" cy="274.76" r="3.2" class="point"/>
+<circle cx="465.97" cy="229.19" r="3.2" class="point"/>
+<circle cx="419.21" cy="279.02" r="3.2" class="point"/>
+<circle cx="349.07" cy="310.95" r="3.2" class="point"/>
+<circle cx="489.34" cy="229.89" r="3.2" class="point"/>
+<circle cx="395.83" cy="280.70" r="3.2" class="point"/>
+<circle cx="465.97" cy="195.57" r="3.2" class="point"/>
+<circle cx="434.26" cy="231.77" r="3.2" class="point"/>
+<circle cx="520.25" cy="179.11" r="3.2" class="point"/>
+<circle cx="116.09" cy="397.92" r="3.2" class="point"/>
+<circle cx="465.97" cy="212.69" r="3.2" class="point"/>
+<circle cx="489.34" cy="219.89" r="3.2" class="point"/>
+<circle cx="512.72" cy="201.11" r="3.2" class="point"/>
+<circle cx="457.64" cy="228.44" r="3.2" class="point"/>
+<circle cx="419.21" cy="279.03" r="3.2" class="point"/>
+<circle cx="442.59" cy="247.43" r="3.2" class="point"/>
+<circle cx="349.07" cy="264.44" r="3.2" class="point"/>
+<circle cx="488.54" cy="230.65" r="3.2" class="point"/>
+<circle cx="504.40" cy="238.35" r="3.2" class="point"/>
+<circle cx="372.45" cy="279.83" r="3.2" class="point"/>
+<circle cx="512.72" cy="200.25" r="3.2" class="point"/>
+<circle cx="325.70" cy="319.08" r="3.2" class="point"/>
+<circle cx="471.31" cy="214.94" r="3.2" class="point"/>
+<circle cx="504.40" cy="188.23" r="3.2" class="point"/>
+<circle cx="512.72" cy="210.24" r="3.2" class="point"/>
+<circle cx="536.10" cy="209.84" r="3.2" class="point"/>
+<circle cx="518.07" cy="211.01" r="3.2" class="point"/>
+<circle cx="372.45" cy="281.59" r="3.2" class="point"/>
+<circle cx="489.34" cy="217.31" r="3.2" class="point"/>
+<circle cx="492.37" cy="205.72" r="3.2" class="point"/>
+<circle cx="442.59" cy="273.35" r="3.2" class="point"/>
+<circle cx="254.18" cy="334.60" r="3.2" class="point"/>
+<circle cx="504.40" cy="187.43" r="3.2" class="point"/>
+<circle cx="302.32" cy="318.59" r="3.2" class="point"/>
+<circle cx="302.32" cy="330.24" r="3.2" class="point"/>
+<circle cx="419.21" cy="276.72" r="3.2" class="point"/>
+<circle cx="512.72" cy="184.15" r="3.2" class="point"/>
+<circle cx="559.48" cy="168.72" r="3.2" class="point"/>
+<circle cx="489.34" cy="198.12" r="3.2" class="point"/>
+<circle cx="302.32" cy="342.37" r="3.2" class="point"/>
+<circle cx="294.79" cy="359.71" r="3.2" class="point"/>
+<circle cx="325.70" cy="262.84" r="3.2" class="point"/>
+<circle cx="465.97" cy="244.29" r="3.2" class="point"/>
+<circle cx="489.34" cy="211.77" r="3.2" class="point"/>
+<circle cx="419.21" cy="279.56" r="3.2" class="point"/>
+<circle cx="465.97" cy="257.66" r="3.2" class="point"/>
+<circle cx="394.98" cy="221.75" r="3.2" class="point"/>
+<circle cx="457.64" cy="242.57" r="3.2" class="point"/>
+<circle cx="481.02" cy="226.53" r="3.2" class="point"/>
+<circle cx="387.50" cy="266.19" r="3.2" class="point"/>
+<circle cx="349.07" cy="230.11" r="3.2" class="point"/>
+<circle cx="387.56" cy="238.62" r="3.2" class="point"/>
+<circle cx="434.26" cy="234.49" r="3.2" class="point"/>
+<circle cx="372.45" cy="267.97" r="3.2" class="point"/>
+<circle cx="349.07" cy="314.29" r="3.2" class="point"/>
+<circle cx="465.97" cy="215.71" r="3.2" class="point"/>
+<circle cx="434.26" cy="225.51" r="3.2" class="point"/>
+<circle cx="317.32" cy="323.19" r="3.2" class="point"/>
+<circle cx="465.97" cy="204.28" r="3.2" class="point"/>
+<circle cx="410.88" cy="223.79" r="3.2" class="point"/>
+<circle cx="280.26" cy="377.94" r="3.2" class="point"/>
+<circle cx="465.97" cy="238.06" r="3.2" class="point"/>
+<circle cx="419.21" cy="266.86" r="3.2" class="point"/>
+<circle cx="419.21" cy="275.82" r="3.2" class="point"/>
+<circle cx="434.26" cy="229.08" r="3.2" class="point"/>
+<circle cx="302.32" cy="352.12" r="3.2" class="point"/>
+<circle cx="349.07" cy="369.08" r="3.2" class="point"/>
+<circle cx="395.83" cy="281.43" r="3.2" class="point"/>
+<circle cx="597.91" cy="151.76" r="3.2" class="point"/>
+<circle cx="512.72" cy="196.72" r="3.2" class="point"/>
+<circle cx="395.83" cy="269.47" r="3.2" class="point"/>
+<circle cx="410.88" cy="264.02" r="3.2" class="point"/>
+<circle cx="559.48" cy="207.24" r="3.2" class="point"/>
+<circle cx="387.50" cy="253.10" r="3.2" class="point"/>
+<circle cx="395.83" cy="278.68" r="3.2" class="point"/>
+<circle cx="512.72" cy="183.64" r="3.2" class="point"/>
+<circle cx="325.70" cy="294.57" r="3.2" class="point"/>
+<circle cx="512.72" cy="262.71" r="3.2" class="point"/>
+<circle cx="512.72" cy="202.79" r="3.2" class="point"/>
+<circle cx="457.64" cy="252.50" r="3.2" class="point"/>
+<circle cx="465.97" cy="246.40" r="3.2" class="point"/>
+<circle cx="457.64" cy="224.88" r="3.2" class="point"/>
+<circle cx="395.83" cy="276.34" r="3.2" class="point"/>
+<circle cx="551.15" cy="148.29" r="3.2" class="point"/>
+<circle cx="481.02" cy="213.39" r="3.2" class="point"/>
+<circle cx="489.34" cy="205.09" r="3.2" class="point"/>
+<circle cx="512.72" cy="206.30" r="3.2" class="point"/>
+<circle cx="410.88" cy="271.17" r="3.2" class="point"/>
+<circle cx="419.21" cy="274.59" r="3.2" class="point"/>
+<circle cx="465.97" cy="258.57" r="3.2" class="point"/>
+<circle cx="465.97" cy="289.69" r="3.2" class="point"/>
+<circle cx="372.45" cy="276.09" r="3.2" class="point"/>
+<circle cx="349.07" cy="269.81" r="3.2" class="point"/>
+<circle cx="488.54" cy="299.39" r="3.2" class="point"/>
+<circle cx="325.70" cy="365.46" r="3.2" class="point"/>
+<circle cx="395.83" cy="245.63" r="3.2" class="point"/>
+<circle cx="162.85" cy="414.24" r="3.2" class="point"/>
+<circle cx="465.97" cy="251.44" r="3.2" class="point"/>
+<circle cx="465.97" cy="228.33" r="3.2" class="point"/>
+<circle cx="442.59" cy="212.11" r="3.2" class="point"/>
+<circle cx="481.02" cy="228.27" r="3.2" class="point"/>
+<circle cx="349.07" cy="280.32" r="3.2" class="point"/>
+<circle cx="512.72" cy="226.79" r="3.2" class="point"/>
+<circle cx="372.45" cy="251.58" r="3.2" class="point"/>
+<circle cx="489.34" cy="211.26" r="3.2" class="point"/>
+<circle cx="488.81" cy="290.00" r="3.2" class="point"/>
+<circle cx="325.70" cy="236.30" r="3.2" class="point"/>
+<circle cx="465.97" cy="203.11" r="3.2" class="point"/>
+<circle cx="512.72" cy="215.14" r="3.2" class="point"/>
+<circle cx="372.45" cy="266.26" r="3.2" class="point"/>
+<circle cx="489.34" cy="204.49" r="3.2" class="point"/>
+<circle cx="434.26" cy="252.16" r="3.2" class="point"/>
+<circle cx="442.59" cy="224.62" r="3.2" class="point"/>
+<circle cx="442.59" cy="238.72" r="3.2" class="point"/>
+<circle cx="395.83" cy="251.89" r="3.2" class="point"/>
+<circle cx="372.45" cy="253.75" r="3.2" class="point"/>
+<circle cx="364.07" cy="295.61" r="3.2" class="point"/>
+<circle cx="512.72" cy="206.03" r="3.2" class="point"/>
+<circle cx="349.07" cy="343.96" r="3.2" class="point"/>
+<circle cx="457.64" cy="241.02" r="3.2" class="point"/>
+<circle cx="325.70" cy="341.99" r="3.2" class="point"/>
+<circle cx="440.41" cy="228.90" r="3.2" class="point"/>
+<circle cx="512.72" cy="211.91" r="3.2" class="point"/>
+<circle cx="512.72" cy="202.60" r="3.2" class="point"/>
+<circle cx="410.88" cy="264.79" r="3.2" class="point"/>
+<circle cx="489.34" cy="289.98" r="3.2" class="point"/>
+<circle cx="317.32" cy="311.89" r="3.2" class="point"/>
+<circle cx="465.97" cy="252.23" r="3.2" class="point"/>
+<circle cx="481.02" cy="249.38" r="3.2" class="point"/>
+<circle cx="349.07" cy="260.33" r="3.2" class="point"/>
+<circle cx="489.34" cy="178.17" r="3.2" class="point"/>
+<circle cx="481.02" cy="224.87" r="3.2" class="point"/>
+<circle cx="536.10" cy="227.12" r="3.2" class="point"/>
+<circle cx="457.64" cy="224.65" r="3.2" class="point"/>
+<circle cx="434.26" cy="247.16" r="3.2" class="point"/>
+<circle cx="296.44" cy="295.62" r="3.2" class="point"/>
+<circle cx="536.10" cy="163.83" r="3.2" class="point"/>
+<circle cx="465.97" cy="257.67" r="3.2" class="point"/>
+<circle cx="465.97" cy="205.10" r="3.2" class="point"/>
+<circle cx="551.15" cy="159.77" r="3.2" class="point"/>
+<circle cx="465.97" cy="266.17" r="3.2" class="point"/>
+<circle cx="364.07" cy="261.08" r="3.2" class="point"/>
+<circle cx="465.17" cy="212.46" r="3.2" class="point"/>
+<circle cx="535.30" cy="260.45" r="3.2" class="point"/>
+<circle cx="481.02" cy="197.84" r="3.2" class="point"/>
+<circle cx="339.37" cy="263.40" r="3.2" class="point"/>
+<circle cx="442.59" cy="229.05" r="3.2" class="point"/>
+<circle cx="465.97" cy="282.97" r="3.2" class="point"/>
+<circle cx="419.21" cy="294.65" r="3.2" class="point"/>
+<circle cx="419.21" cy="261.12" r="3.2" class="point"/>
+<circle cx="465.97" cy="257.11" r="3.2" class="point"/>
+<circle cx="489.34" cy="198.38" r="3.2" class="point"/>
+<circle cx="395.83" cy="345.72" r="3.2" class="point"/>
+<circle cx="481.02" cy="199.68" r="3.2" class="point"/>
+<circle cx="278.94" cy="323.73" r="3.2" class="point"/>
+<circle cx="574.53" cy="151.85" r="3.2" class="point"/>
+<circle cx="489.34" cy="227.35" r="3.2" class="point"/>
+<circle cx="395.83" cy="264.04" r="3.2" class="point"/>
+<circle cx="325.70" cy="333.20" r="3.2" class="point"/>
+<circle cx="442.59" cy="210.67" r="3.2" class="point"/>
+<circle cx="419.21" cy="202.00" r="3.2" class="point"/>
+<circle cx="512.72" cy="154.69" r="3.2" class="point"/>
+<circle cx="457.64" cy="230.54" r="3.2" class="point"/>
+<circle cx="512.72" cy="199.32" r="3.2" class="point"/>
+<circle cx="512.72" cy="216.87" r="3.2" class="point"/>
+<circle cx="512.72" cy="222.65" r="3.2" class="point"/>
+<circle cx="512.72" cy="157.64" r="3.2" class="point"/>
+<circle cx="339.37" cy="338.86" r="3.2" class="point"/>
+<circle cx="489.34" cy="207.92" r="3.2" class="point"/>
+<circle cx="481.02" cy="265.52" r="3.2" class="point"/>
+<circle cx="372.45" cy="332.83" r="3.2" class="point"/>
+<circle cx="278.94" cy="352.36" r="3.2" class="point"/>
+<circle cx="294.79" cy="322.67" r="3.2" class="point"/>
+<circle cx="457.64" cy="244.02" r="3.2" class="point"/>
+<circle cx="465.97" cy="295.05" r="3.2" class="point"/>
+<circle cx="465.97" cy="201.90" r="3.2" class="point"/>
+<circle cx="434.26" cy="285.25" r="3.2" class="point"/>
+<circle cx="419.21" cy="269.28" r="3.2" class="point"/>
+<circle cx="489.34" cy="245.80" r="3.2" class="point"/>
+<circle cx="489.34" cy="239.92" r="3.2" class="point"/>
+<circle cx="302.32" cy="381.55" r="3.2" class="point"/>
+<circle cx="349.07" cy="300.31" r="3.2" class="point"/>
+<circle cx="424.54" cy="240.52" r="3.2" class="point"/>
+<circle cx="349.07" cy="312.47" r="3.2" class="point"/>
+<circle cx="395.83" cy="251.75" r="3.2" class="point"/>
+<circle cx="325.70" cy="312.96" r="3.2" class="point"/>
+<circle cx="465.97" cy="257.65" r="3.2" class="point"/>
+<circle cx="278.94" cy="303.42" r="3.2" class="point"/>
+<circle cx="512.72" cy="196.09" r="3.2" class="point"/>
+<circle cx="512.72" cy="222.28" r="3.2" class="point"/>
+<circle cx="264.72" cy="310.98" r="3.2" class="point"/>
+<circle cx="465.97" cy="224.58" r="3.2" class="point"/>
+<circle cx="442.59" cy="241.31" r="3.2" class="point"/>
+<circle cx="489.34" cy="213.57" r="3.2" class="point"/>
+<circle cx="504.40" cy="191.66" r="3.2" class="point"/>
+<circle cx="302.32" cy="322.21" r="3.2" class="point"/>
+<circle cx="294.79" cy="363.25" r="3.2" class="point"/>
+<circle cx="536.10" cy="211.53" r="3.2" class="point"/>
+<circle cx="387.56" cy="245.52" r="3.2" class="point"/>
+<circle cx="489.34" cy="225.04" r="3.2" class="point"/>
+<circle cx="302.32" cy="342.45" r="3.2" class="point"/>
+<circle cx="551.15" cy="165.72" r="3.2" class="point"/>
+<circle cx="465.97" cy="332.95" r="3.2" class="point"/>
+<circle cx="302.32" cy="316.12" r="3.2" class="point"/>
+<circle cx="489.34" cy="345.47" r="3.2" class="point"/>
+<circle cx="317.32" cy="329.78" r="3.2" class="point"/>
+<circle cx="489.34" cy="221.22" r="3.2" class="point"/>
+<circle cx="387.50" cy="297.72" r="3.2" class="point"/>
+<circle cx="512.72" cy="191.77" r="3.2" class="point"/>
+<circle cx="395.83" cy="281.80" r="3.2" class="point"/>
+<circle cx="512.72" cy="219.85" r="3.2" class="point"/>
+<circle cx="512.72" cy="201.68" r="3.2" class="point"/>
+<circle cx="442.59" cy="250.11" r="3.2" class="point"/>
+<circle cx="481.02" cy="232.20" r="3.2" class="point"/>
+<circle cx="465.97" cy="249.95" r="3.2" class="point"/>
+<circle cx="582.06" cy="181.18" r="3.2" class="point"/>
+<circle cx="302.32" cy="338.93" r="3.2" class="point"/>
+<circle cx="442.59" cy="276.40" r="3.2" class="point"/>
+<circle cx="349.07" cy="333.26" r="3.2" class="point"/>
+<circle cx="465.97" cy="201.58" r="3.2" class="point"/>
+<circle cx="442.59" cy="227.20" r="3.2" class="point"/>
+<circle cx="434.26" cy="223.01" r="3.2" class="point"/>
+<circle cx="512.72" cy="222.30" r="3.2" class="point"/>
+<circle cx="442.59" cy="224.24" r="3.2" class="point"/>
+<circle cx="512.72" cy="197.96" r="3.2" class="point"/>
+<circle cx="410.88" cy="243.53" r="3.2" class="point"/>
+<circle cx="535.30" cy="179.93" r="3.2" class="point"/>
+<circle cx="504.40" cy="232.60" r="3.2" class="point"/>
+<circle cx="536.10" cy="276.19" r="3.2" class="point"/>
+<circle cx="512.72" cy="213.55" r="3.2" class="point"/>
+<circle cx="419.21" cy="262.86" r="3.2" class="point"/>
+<circle cx="419.21" cy="198.35" r="3.2" class="point"/>
+<line x1="110" y1="137" x2="150" y2="137" stroke="#24292F" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="160.00" y="142.00" text-anchor="start" font-size="12" font-weight="normal" fill="#24292F">Ideal: y = x</text>
+<text x="604.00" y="426.00" text-anchor="end" font-size="13" font-weight="normal" fill="#24292F">n = 331</text>
+<text x="604.00" y="446.00" text-anchor="end" font-size="13" font-weight="normal" fill="#24292F">RMSE = 2.093</text>
+<text x="604.00" y="466.00" text-anchor="end" font-size="13" font-weight="normal" fill="#24292F">MAE = 1.524</text>
+<text x="604.00" y="486.00" text-anchor="end" font-size="13" font-weight="bold" fill="#24292F">R² = 0.599</text>
+<line x1="805" y1="502" x2="1335" y2="502" class="axis"/>
+<line x1="805" y1="112" x2="805" y2="502" class="axis"/>
+<line x1="805.00" y1="112" x2="805.00" y2="502" class="grid"/>
+<line x1="805" y1="502.00" x2="1335" y2="502.00" class="grid"/>
+<text x="805.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">-11.0</text>
+<text x="792.00" y="506.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">-9.4</text>
+<line x1="911.00" y1="112" x2="911.00" y2="502" class="grid"/>
+<line x1="805" y1="424.00" x2="1335" y2="424.00" class="grid"/>
+<text x="911.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">-6.5</text>
+<text x="792.00" y="428.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">-5.7</text>
+<line x1="1017.00" y1="112" x2="1017.00" y2="502" class="grid"/>
+<line x1="805" y1="346.00" x2="1335" y2="346.00" class="grid"/>
+<text x="1017.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">-1.9</text>
+<text x="792.00" y="350.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">-1.9</text>
+<line x1="1123.00" y1="112" x2="1123.00" y2="502" class="grid"/>
+<line x1="805" y1="268.00" x2="1335" y2="268.00" class="grid"/>
+<text x="1123.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">2.6</text>
+<text x="792.00" y="272.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">1.9</text>
+<line x1="1229.00" y1="112" x2="1229.00" y2="502" class="grid"/>
+<line x1="805" y1="190.00" x2="1335" y2="190.00" class="grid"/>
+<text x="1229.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">7.1</text>
+<text x="792.00" y="194.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">5.7</text>
+<line x1="1335.00" y1="112" x2="1335.00" y2="502" class="grid"/>
+<line x1="805" y1="112.00" x2="1335" y2="112.00" class="grid"/>
+<text x="1335.00" y="526.00" text-anchor="middle" font-size="12" font-weight="normal" fill="#7A828A">11.7</text>
+<text x="792.00" y="116.00" text-anchor="end" font-size="12" font-weight="normal" fill="#7A828A">9.4</text>
+<text x="1070.00" y="560.00" text-anchor="middle" font-size="14" font-weight="normal" fill="#24292F">Observed log2(MIC [µg/mL])</text>
+<text x="741.00" y="307.00" text-anchor="middle" font-size="14" font-weight="normal" fill="#24292F" transform="rotate(-90 741.00 307.00)">Residual: predicted − observed</text>
+<line x1="805" y1="307.00" x2="1335" y2="307.00" stroke="#24292F" stroke-width="1.6" stroke-dasharray="7 5"/>
+<line x1="805" y1="286.31" x2="1335" y2="286.31" stroke="#7A828A" stroke-width="1.0" stroke-dasharray="2 4"/>
+<line x1="805" y1="327.69" x2="1335" y2="327.69" stroke="#7A828A" stroke-width="1.0" stroke-dasharray="2 4"/>
+<line x1="805" y1="265.63" x2="1335" y2="265.63" stroke="#C7CDD3" stroke-width="1.0" stroke-dasharray="7 4 2 4"/>
+<line x1="805" y1="348.37" x2="1335" y2="348.37" stroke="#C7CDD3" stroke-width="1.0" stroke-dasharray="7 4 2 4"/>
+<circle cx="1132.21" cy="291.68" r="3.2" class="point"/>
+<circle cx="1085.45" cy="292.11" r="3.2" class="point"/>
+<circle cx="1178.97" cy="379.15" r="3.2" class="point"/>
+<circle cx="1202.34" cy="284.64" r="3.2" class="point"/>
+<circle cx="1202.34" cy="262.20" r="3.2" class="point"/>
+<circle cx="1155.59" cy="225.21" r="3.2" class="point"/>
+<circle cx="1178.97" cy="356.19" r="3.2" class="point"/>
+<circle cx="1108.83" cy="260.34" r="3.2" class="point"/>
+<circle cx="1053.69" cy="270.34" r="3.2" class="point"/>
+<circle cx="1202.34" cy="337.17" r="3.2" class="point"/>
+<circle cx="1132.21" cy="355.17" r="3.2" class="point"/>
+<circle cx="1248.30" cy="427.49" r="3.2" class="point"/>
+<circle cx="1062.07" cy="300.93" r="3.2" class="point"/>
+<circle cx="1108.83" cy="250.29" r="3.2" class="point"/>
+<circle cx="1202.34" cy="334.63" r="3.2" class="point"/>
+<circle cx="1170.64" cy="311.94" r="3.2" class="point"/>
+<circle cx="1122.51" cy="321.11" r="3.2" class="point"/>
+<circle cx="1155.59" cy="343.61" r="3.2" class="point"/>
+<circle cx="1202.34" cy="297.60" r="3.2" class="point"/>
+<circle cx="1132.21" cy="297.87" r="3.2" class="point"/>
+<circle cx="1122.51" cy="322.00" r="3.2" class="point"/>
+<circle cx="1132.21" cy="259.71" r="3.2" class="point"/>
+<circle cx="1132.21" cy="280.32" r="3.2" class="point"/>
+<circle cx="1108.83" cy="286.28" r="3.2" class="point"/>
+<circle cx="1155.59" cy="280.80" r="3.2" class="point"/>
+<circle cx="1194.02" cy="308.98" r="3.2" class="point"/>
+<circle cx="1155.59" cy="288.87" r="3.2" class="point"/>
+<circle cx="1085.45" cy="352.98" r="3.2" class="point"/>
+<circle cx="1123.88" cy="275.42" r="3.2" class="point"/>
+<circle cx="1248.30" cy="309.68" r="3.2" class="point"/>
+<circle cx="1015.32" cy="205.29" r="3.2" class="point"/>
+<circle cx="1272.48" cy="344.15" r="3.2" class="point"/>
+<circle cx="1225.72" cy="332.39" r="3.2" class="point"/>
+<circle cx="1132.21" cy="292.65" r="3.2" class="point"/>
+<circle cx="1178.97" cy="344.82" r="3.2" class="point"/>
+<circle cx="1108.83" cy="278.94" r="3.2" class="point"/>
+<circle cx="1217.40" cy="368.77" r="3.2" class="point"/>
+<circle cx="1062.07" cy="394.05" r="3.2" class="point"/>
+<circle cx="1178.97" cy="307.43" r="3.2" class="point"/>
+<circle cx="1194.02" cy="347.79" r="3.2" class="point"/>
+<circle cx="1007.79" cy="358.14" r="3.2" class="point"/>
+<circle cx="899.23" cy="309.53" r="3.2" class="point"/>
+<circle cx="1108.83" cy="306.62" r="3.2" class="point"/>
+<circle cx="1170.64" cy="287.85" r="3.2" class="point"/>
+<circle cx="1178.97" cy="335.74" r="3.2" class="point"/>
+<circle cx="1155.59" cy="305.32" r="3.2" class="point"/>
+<circle cx="1201.54" cy="224.16" r="3.2" class="point"/>
+<circle cx="1085.45" cy="286.64" r="3.2" class="point"/>
+<circle cx="1225.72" cy="325.03" r="3.2" class="point"/>
+<circle cx="1108.83" cy="306.38" r="3.2" class="point"/>
+<circle cx="1147.26" cy="295.61" r="3.2" class="point"/>
+<circle cx="1085.45" cy="192.24" r="3.2" class="point"/>
+<circle cx="852.47" cy="129.06" r="3.2" class="point"/>
+<circle cx="1225.72" cy="341.10" r="3.2" class="point"/>
+<circle cx="1147.26" cy="274.31" r="3.2" class="point"/>
+<circle cx="1178.97" cy="289.32" r="3.2" class="point"/>
+<circle cx="1132.21" cy="296.81" r="3.2" class="point"/>
+<circle cx="1194.02" cy="322.59" r="3.2" class="point"/>
+<circle cx="1202.34" cy="292.81" r="3.2" class="point"/>
+<circle cx="1249.10" cy="315.69" r="3.2" class="point"/>
+<circle cx="1178.97" cy="290.93" r="3.2" class="point"/>
+<circle cx="1170.64" cy="302.39" r="3.2" class="point"/>
+<circle cx="1107.98" cy="234.34" r="3.2" class="point"/>
+<circle cx="1062.07" cy="315.85" r="3.2" class="point"/>
+<circle cx="1015.32" cy="294.43" r="3.2" class="point"/>
+<circle cx="1295.06" cy="323.83" r="3.2" class="point"/>
+<circle cx="1202.34" cy="325.24" r="3.2" class="point"/>
+<circle cx="1249.10" cy="352.02" r="3.2" class="point"/>
+<circle cx="1225.72" cy="330.55" r="3.2" class="point"/>
+<circle cx="1108.83" cy="292.68" r="3.2" class="point"/>
+<circle cx="1085.45" cy="303.94" r="3.2" class="point"/>
+<circle cx="1225.72" cy="343.68" r="3.2" class="point"/>
+<circle cx="984.41" cy="158.99" r="3.2" class="point"/>
+<circle cx="1254.45" cy="360.41" r="3.2" class="point"/>
+<circle cx="1225.72" cy="338.32" r="3.2" class="point"/>
+<circle cx="1108.83" cy="302.95" r="3.2" class="point"/>
+<circle cx="1178.97" cy="336.20" r="3.2" class="point"/>
+<circle cx="1170.64" cy="318.08" r="3.2" class="point"/>
+<circle cx="1100.50" cy="201.35" r="3.2" class="point"/>
+<circle cx="1132.21" cy="338.19" r="3.2" class="point"/>
+<circle cx="1108.83" cy="287.85" r="3.2" class="point"/>
+<circle cx="1178.97" cy="361.71" r="3.2" class="point"/>
+<circle cx="1108.83" cy="257.41" r="3.2" class="point"/>
+<circle cx="1178.97" cy="335.40" r="3.2" class="point"/>
+<circle cx="1147.26" cy="299.65" r="3.2" class="point"/>
+<circle cx="1202.34" cy="306.96" r="3.2" class="point"/>
+<circle cx="1062.07" cy="229.01" r="3.2" class="point"/>
+<circle cx="1147.26" cy="278.07" r="3.2" class="point"/>
+<circle cx="1202.34" cy="360.88" r="3.2" class="point"/>
+<circle cx="1202.34" cy="339.82" r="3.2" class="point"/>
+<circle cx="1225.72" cy="349.41" r="3.2" class="point"/>
+<circle cx="1178.97" cy="487.56" r="3.2" class="point"/>
+<circle cx="1038.70" cy="291.07" r="3.2" class="point"/>
+<circle cx="1062.07" cy="265.88" r="3.2" class="point"/>
+<circle cx="1155.59" cy="373.54" r="3.2" class="point"/>
+<circle cx="1108.83" cy="244.51" r="3.2" class="point"/>
+<circle cx="1085.45" cy="334.75" r="3.2" class="point"/>
+<circle cx="1038.70" cy="258.74" r="3.2" class="point"/>
+<circle cx="1062.07" cy="292.44" r="3.2" class="point"/>
+<circle cx="1038.70" cy="240.53" r="3.2" class="point"/>
+<circle cx="1178.97" cy="309.85" r="3.2" class="point"/>
+<circle cx="1132.21" cy="328.40" r="3.2" class="point"/>
+<circle cx="1062.07" cy="304.74" r="3.2" class="point"/>
+<circle cx="1202.34" cy="331.39" r="3.2" class="point"/>
+<circle cx="1108.83" cy="309.73" r="3.2" class="point"/>
+<circle cx="1178.97" cy="269.42" r="3.2" class="point"/>
+<circle cx="1147.26" cy="284.90" r="3.2" class="point"/>
+<circle cx="1233.25" cy="297.66" r="3.2" class="point"/>
+<circle cx="829.09" cy="203.16" r="3.2" class="point"/>
+<circle cx="1178.97" cy="290.01" r="3.2" class="point"/>
+<circle cx="1202.34" cy="319.36" r="3.2" class="point"/>
+<circle cx="1225.72" cy="317.46" r="3.2" class="point"/>
+<circle cx="1170.64" cy="301.58" r="3.2" class="point"/>
+<circle cx="1132.21" cy="328.42" r="3.2" class="point"/>
+<circle cx="1155.59" cy="311.10" r="3.2" class="point"/>
+<circle cx="1062.07" cy="248.81" r="3.2" class="point"/>
+<circle cx="1201.54" cy="331.59" r="3.2" class="point"/>
+<circle cx="1217.40" cy="354.87" r="3.2" class="point"/>
+<circle cx="1085.45" cy="288.00" r="3.2" class="point"/>
+<circle cx="1225.72" cy="316.43" r="3.2" class="point"/>
+<circle cx="1038.70" cy="293.83" r="3.2" class="point"/>
+<circle cx="1184.31" cy="297.45" r="3.2" class="point"/>
+<circle cx="1217.40" cy="294.60" r="3.2" class="point"/>
+<circle cx="1225.72" cy="328.44" r="3.2" class="point"/>
+<circle cx="1249.10" cy="348.64" r="3.2" class="point"/>
+<circle cx="1231.07" cy="334.10" r="3.2" class="point"/>
+<circle cx="1085.45" cy="290.11" r="3.2" class="point"/>
+<circle cx="1202.34" cy="316.26" r="3.2" class="point"/>
+<circle cx="1205.37" cy="304.99" r="3.2" class="point"/>
+<circle cx="1155.59" cy="342.27" r="3.2" class="point"/>
+<circle cx="967.18" cy="249.21" r="3.2" class="point"/>
+<circle cx="1217.40" cy="293.64" r="3.2" class="point"/>
+<circle cx="1015.32" cy="272.55" r="3.2" class="point"/>
+<circle cx="1015.32" cy="286.56" r="3.2" class="point"/>
+<circle cx="1132.21" cy="325.64" r="3.2" class="point"/>
+<circle cx="1225.72" cy="297.06" r="3.2" class="point"/>
+<circle cx="1272.48" cy="319.89" r="3.2" class="point"/>
+<circle cx="1202.34" cy="293.17" r="3.2" class="point"/>
+<circle cx="1015.32" cy="301.14" r="3.2" class="point"/>
+<circle cx="1007.79" cy="315.34" r="3.2" class="point"/>
+<circle cx="1038.70" cy="226.19" r="3.2" class="point"/>
+<circle cx="1178.97" cy="328.01" r="3.2" class="point"/>
+<circle cx="1202.34" cy="309.59" r="3.2" class="point"/>
+<circle cx="1132.21" cy="329.04" r="3.2" class="point"/>
+<circle cx="1178.97" cy="344.09" r="3.2" class="point"/>
+<circle cx="1107.98" cy="238.10" r="3.2" class="point"/>
+<circle cx="1170.64" cy="318.58" r="3.2" class="point"/>
+<circle cx="1194.02" cy="319.97" r="3.2" class="point"/>
+<circle cx="1100.50" cy="284.92" r="3.2" class="point"/>
+<circle cx="1062.07" cy="207.52" r="3.2" class="point"/>
+<circle cx="1100.56" cy="251.81" r="3.2" class="point"/>
+<circle cx="1147.26" cy="288.17" r="3.2" class="point"/>
+<circle cx="1085.45" cy="273.74" r="3.2" class="point"/>
+<circle cx="1062.07" cy="308.76" r="3.2" class="point"/>
+<circle cx="1178.97" cy="293.64" r="3.2" class="point"/>
+<circle cx="1147.26" cy="277.37" r="3.2" class="point"/>
+<circle cx="1030.32" cy="291.36" r="3.2" class="point"/>
+<circle cx="1178.97" cy="279.90" r="3.2" class="point"/>
+<circle cx="1123.88" cy="254.62" r="3.2" class="point"/>
+<circle cx="993.26" cy="324.40" r="3.2" class="point"/>
+<circle cx="1178.97" cy="320.52" r="3.2" class="point"/>
+<circle cx="1132.21" cy="313.78" r="3.2" class="point"/>
+<circle cx="1132.21" cy="324.56" r="3.2" class="point"/>
+<circle cx="1147.26" cy="281.67" r="3.2" class="point"/>
+<circle cx="1015.32" cy="312.86" r="3.2" class="point"/>
+<circle cx="1062.07" cy="374.64" r="3.2" class="point"/>
+<circle cx="1108.83" cy="310.61" r="3.2" class="point"/>
+<circle cx="1310.91" cy="333.49" r="3.2" class="point"/>
+<circle cx="1225.72" cy="312.18" r="3.2" class="point"/>
+<circle cx="1108.83" cy="296.23" r="3.2" class="point"/>
+<circle cx="1123.88" cy="302.99" r="3.2" class="point"/>
+<circle cx="1272.48" cy="366.20" r="3.2" class="point"/>
+<circle cx="1100.50" cy="269.17" r="3.2" class="point"/>
+<circle cx="1108.83" cy="307.30" r="3.2" class="point"/>
+<circle cx="1225.72" cy="296.45" r="3.2" class="point"/>
+<circle cx="1038.70" cy="264.36" r="3.2" class="point"/>
+<circle cx="1225.72" cy="391.53" r="3.2" class="point"/>
+<circle cx="1225.72" cy="319.48" r="3.2" class="point"/>
+<circle cx="1170.64" cy="330.51" r="3.2" class="point"/>
+<circle cx="1178.97" cy="330.55" r="3.2" class="point"/>
+<circle cx="1170.64" cy="297.30" r="3.2" class="point"/>
+<circle cx="1108.83" cy="304.50" r="3.2" class="point"/>
+<circle cx="1264.15" cy="287.95" r="3.2" class="point"/>
+<circle cx="1194.02" cy="304.17" r="3.2" class="point"/>
+<circle cx="1202.34" cy="301.56" r="3.2" class="point"/>
+<circle cx="1225.72" cy="323.70" r="3.2" class="point"/>
+<circle cx="1123.88" cy="311.60" r="3.2" class="point"/>
+<circle cx="1132.21" cy="323.07" r="3.2" class="point"/>
+<circle cx="1178.97" cy="345.18" r="3.2" class="point"/>
+<circle cx="1178.97" cy="382.61" r="3.2" class="point"/>
+<circle cx="1085.45" cy="283.51" r="3.2" class="point"/>
+<circle cx="1062.07" cy="255.26" r="3.2" class="point"/>
+<circle cx="1201.54" cy="414.24" r="3.2" class="point"/>
+<circle cx="1038.70" cy="349.60" r="3.2" class="point"/>
+<circle cx="1108.83" cy="267.56" r="3.2" class="point"/>
+<circle cx="875.85" cy="264.16" r="3.2" class="point"/>
+<circle cx="1178.97" cy="336.61" r="3.2" class="point"/>
+<circle cx="1178.97" cy="308.82" r="3.2" class="point"/>
+<circle cx="1155.59" cy="268.62" r="3.2" class="point"/>
+<circle cx="1194.02" cy="322.07" r="3.2" class="point"/>
+<circle cx="1062.07" cy="267.90" r="3.2" class="point"/>
+<circle cx="1225.72" cy="348.34" r="3.2" class="point"/>
+<circle cx="1085.45" cy="254.03" r="3.2" class="point"/>
+<circle cx="1202.34" cy="308.97" r="3.2" class="point"/>
+<circle cx="1201.81" cy="403.20" r="3.2" class="point"/>
+<circle cx="1038.70" cy="194.29" r="3.2" class="point"/>
+<circle cx="1178.97" cy="278.49" r="3.2" class="point"/>
+<circle cx="1225.72" cy="334.33" r="3.2" class="point"/>
+<circle cx="1085.45" cy="271.68" r="3.2" class="point"/>
+<circle cx="1202.34" cy="300.83" r="3.2" class="point"/>
+<circle cx="1147.26" cy="309.43" r="3.2" class="point"/>
+<circle cx="1155.59" cy="283.67" r="3.2" class="point"/>
+<circle cx="1155.59" cy="300.62" r="3.2" class="point"/>
+<circle cx="1108.83" cy="275.09" r="3.2" class="point"/>
+<circle cx="1085.45" cy="256.64" r="3.2" class="point"/>
+<circle cx="1077.07" cy="299.56" r="3.2" class="point"/>
+<circle cx="1225.72" cy="323.38" r="3.2" class="point"/>
+<circle cx="1062.07" cy="344.43" r="3.2" class="point"/>
+<circle cx="1170.64" cy="316.70" r="3.2" class="point"/>
+<circle cx="1038.70" cy="321.38" r="3.2" class="point"/>
+<circle cx="1153.41" cy="286.89" r="3.2" class="point"/>
+<circle cx="1225.72" cy="330.44" r="3.2" class="point"/>
+<circle cx="1225.72" cy="319.25" r="3.2" class="point"/>
+<circle cx="1123.88" cy="303.92" r="3.2" class="point"/>
+<circle cx="1202.34" cy="403.63" r="3.2" class="point"/>
+<circle cx="1030.32" cy="277.76" r="3.2" class="point"/>
+<circle cx="1178.97" cy="337.56" r="3.2" class="point"/>
+<circle cx="1194.02" cy="347.46" r="3.2" class="point"/>
+<circle cx="1062.07" cy="243.86" r="3.2" class="point"/>
+<circle cx="1202.34" cy="269.19" r="3.2" class="point"/>
+<circle cx="1194.02" cy="317.97" r="3.2" class="point"/>
+<circle cx="1249.10" cy="369.42" r="3.2" class="point"/>
+<circle cx="1170.64" cy="297.03" r="3.2" class="point"/>
+<circle cx="1147.26" cy="303.41" r="3.2" class="point"/>
+<circle cx="1009.44" cy="239.73" r="3.2" class="point"/>
+<circle cx="1249.10" cy="293.31" r="3.2" class="point"/>
+<circle cx="1178.97" cy="344.10" r="3.2" class="point"/>
+<circle cx="1178.97" cy="280.88" r="3.2" class="point"/>
+<circle cx="1264.15" cy="301.76" r="3.2" class="point"/>
+<circle cx="1178.97" cy="354.32" r="3.2" class="point"/>
+<circle cx="1077.07" cy="258.04" r="3.2" class="point"/>
+<circle cx="1178.17" cy="289.03" r="3.2" class="point"/>
+<circle cx="1248.30" cy="408.80" r="3.2" class="point"/>
+<circle cx="1194.02" cy="285.48" r="3.2" class="point"/>
+<circle cx="1052.37" cy="238.97" r="3.2" class="point"/>
+<circle cx="1155.59" cy="289.00" r="3.2" class="point"/>
+<circle cx="1178.97" cy="374.53" r="3.2" class="point"/>
+<circle cx="1132.21" cy="347.19" r="3.2" class="point"/>
+<circle cx="1132.21" cy="306.87" r="3.2" class="point"/>
+<circle cx="1178.97" cy="343.42" r="3.2" class="point"/>
+<circle cx="1202.34" cy="293.48" r="3.2" class="point"/>
+<circle cx="1108.83" cy="387.92" r="3.2" class="point"/>
+<circle cx="1194.02" cy="287.68" r="3.2" class="point"/>
+<circle cx="991.94" cy="258.05" r="3.2" class="point"/>
+<circle cx="1287.53" cy="312.91" r="3.2" class="point"/>
+<circle cx="1202.34" cy="328.33" r="3.2" class="point"/>
+<circle cx="1108.83" cy="289.70" r="3.2" class="point"/>
+<circle cx="1038.70" cy="310.81" r="3.2" class="point"/>
+<circle cx="1155.59" cy="266.89" r="3.2" class="point"/>
+<circle cx="1132.21" cy="235.78" r="3.2" class="point"/>
+<circle cx="1225.72" cy="261.64" r="3.2" class="point"/>
+<circle cx="1170.64" cy="304.11" r="3.2" class="point"/>
+<circle cx="1225.72" cy="315.31" r="3.2" class="point"/>
+<circle cx="1225.72" cy="336.41" r="3.2" class="point"/>
+<circle cx="1225.72" cy="343.36" r="3.2" class="point"/>
+<circle cx="1225.72" cy="265.19" r="3.2" class="point"/>
+<circle cx="1052.37" cy="329.71" r="3.2" class="point"/>
+<circle cx="1202.34" cy="304.96" r="3.2" class="point"/>
+<circle cx="1194.02" cy="366.86" r="3.2" class="point"/>
+<circle cx="1085.45" cy="351.74" r="3.2" class="point"/>
+<circle cx="991.94" cy="292.47" r="3.2" class="point"/>
+<circle cx="1007.79" cy="270.80" r="3.2" class="point"/>
+<circle cx="1170.64" cy="320.32" r="3.2" class="point"/>
+<circle cx="1178.97" cy="389.05" r="3.2" class="point"/>
+<circle cx="1178.97" cy="277.04" r="3.2" class="point"/>
+<circle cx="1147.26" cy="349.22" r="3.2" class="point"/>
+<circle cx="1132.21" cy="316.68" r="3.2" class="point"/>
+<circle cx="1202.34" cy="350.51" r="3.2" class="point"/>
+<circle cx="1202.34" cy="343.44" r="3.2" class="point"/>
+<circle cx="1015.32" cy="348.26" r="3.2" class="point"/>
+<circle cx="1062.07" cy="291.94" r="3.2" class="point"/>
+<circle cx="1137.54" cy="286.82" r="3.2" class="point"/>
+<circle cx="1062.07" cy="306.56" r="3.2" class="point"/>
+<circle cx="1108.83" cy="274.92" r="3.2" class="point"/>
+<circle cx="1038.70" cy="286.46" r="3.2" class="point"/>
+<circle cx="1178.97" cy="344.08" r="3.2" class="point"/>
+<circle cx="991.94" cy="233.62" r="3.2" class="point"/>
+<circle cx="1225.72" cy="311.42" r="3.2" class="point"/>
+<circle cx="1225.72" cy="342.91" r="3.2" class="point"/>
+<circle cx="977.72" cy="230.13" r="3.2" class="point"/>
+<circle cx="1178.97" cy="304.31" r="3.2" class="point"/>
+<circle cx="1155.59" cy="303.74" r="3.2" class="point"/>
+<circle cx="1202.34" cy="311.76" r="3.2" class="point"/>
+<circle cx="1217.40" cy="298.72" r="3.2" class="point"/>
+<circle cx="1015.32" cy="276.90" r="3.2" class="point"/>
+<circle cx="1007.79" cy="319.60" r="3.2" class="point"/>
+<circle cx="1249.10" cy="350.67" r="3.2" class="point"/>
+<circle cx="1100.56" cy="260.11" r="3.2" class="point"/>
+<circle cx="1202.34" cy="325.54" r="3.2" class="point"/>
+<circle cx="1015.32" cy="301.24" r="3.2" class="point"/>
+<circle cx="1264.15" cy="308.91" r="3.2" class="point"/>
+<circle cx="1178.97" cy="434.62" r="3.2" class="point"/>
+<circle cx="1015.32" cy="269.58" r="3.2" class="point"/>
+<circle cx="1202.34" cy="470.37" r="3.2" class="point"/>
+<circle cx="1030.32" cy="299.28" r="3.2" class="point"/>
+<circle cx="1202.34" cy="320.96" r="3.2" class="point"/>
+<circle cx="1100.50" cy="322.83" r="3.2" class="point"/>
+<circle cx="1225.72" cy="306.23" r="3.2" class="point"/>
+<circle cx="1108.83" cy="311.05" r="3.2" class="point"/>
+<circle cx="1225.72" cy="339.99" r="3.2" class="point"/>
+<circle cx="1225.72" cy="318.14" r="3.2" class="point"/>
+<circle cx="1155.59" cy="314.32" r="3.2" class="point"/>
+<circle cx="1194.02" cy="326.80" r="3.2" class="point"/>
+<circle cx="1178.97" cy="334.81" r="3.2" class="point"/>
+<circle cx="1295.06" cy="354.84" r="3.2" class="point"/>
+<circle cx="1015.32" cy="297.01" r="3.2" class="point"/>
+<circle cx="1155.59" cy="345.94" r="3.2" class="point"/>
+<circle cx="1062.07" cy="331.57" r="3.2" class="point"/>
+<circle cx="1178.97" cy="276.65" r="3.2" class="point"/>
+<circle cx="1155.59" cy="286.77" r="3.2" class="point"/>
+<circle cx="1147.26" cy="274.36" r="3.2" class="point"/>
+<circle cx="1225.72" cy="342.94" r="3.2" class="point"/>
+<circle cx="1155.59" cy="283.21" r="3.2" class="point"/>
+<circle cx="1225.72" cy="313.67" r="3.2" class="point"/>
+<circle cx="1123.88" cy="278.35" r="3.2" class="point"/>
+<circle cx="1248.30" cy="311.97" r="3.2" class="point"/>
+<circle cx="1217.40" cy="347.96" r="3.2" class="point"/>
+<circle cx="1249.10" cy="428.43" r="3.2" class="point"/>
+<circle cx="1225.72" cy="332.42" r="3.2" class="point"/>
+<circle cx="1132.21" cy="308.97" r="3.2" class="point"/>
+<circle cx="1132.21" cy="231.39" r="3.2" class="point"/>
+<line x1="1143" y1="135" x2="1181" y2="135" stroke="#24292F" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="1190.00" y="139.00" text-anchor="start" font-size="11" font-weight="normal" fill="#24292F">Zero residual</text>
+<line x1="1143" y1="157" x2="1181" y2="157" stroke="#7A828A" stroke-width="1.5" stroke-dasharray="2 4"/>
+<text x="1190.00" y="161.00" text-anchor="start" font-size="11" font-weight="normal" fill="#24292F">±1 log₂ (about 2-fold)</text>
+<line x1="1143" y1="179" x2="1181" y2="179" stroke="#C7CDD3" stroke-width="1.5" stroke-dasharray="7 4 2 4"/>
+<text x="1190.00" y="183.00" text-anchor="start" font-size="11" font-weight="normal" fill="#24292F">±2 log₂ (about 4-fold)</text>
+</svg>
