@@ -282,14 +282,14 @@ def main() -> None:
             "rank_low_mic": "1 = lowest predicted MIC (typically strongest predicted antibacterial activity)",
         },
         "input": {
-            "data_path": str(args.data_path.resolve()),
+            "data_path": str(args.data_path),
             "encoding": args.input_encoding,
             "rows": int(len(frame)),
             "smiles_column": args.smiles_column,
             "status_counts_by_row": status_counts,
         },
         "model": {
-            "model_path": str(args.model_path.resolve()),
+            "model_path": str(args.model_path),
             "sha256": file_sha256(args.model_path),
             "architecture": architecture,
         },
@@ -302,10 +302,10 @@ def main() -> None:
             ),
         },
         "outputs": {
-            "all_rows": str(all_rows_path.resolve()),
-            "unique_molecule_ranking": str(ranking_path.resolve()),
-            "top_high_mic": str(top_path.resolve()),
-            "excluded_structures": str(excluded_path.resolve()),
+            "all_rows": str(all_rows_path),
+            "unique_molecule_ranking": str(ranking_path),
+            "top_high_mic": str(top_path),
+            "excluded_structures": str(excluded_path),
         },
     }
     (args.output_dir / "inference_summary.json").write_text(

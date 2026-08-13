@@ -209,11 +209,13 @@ def main() -> None:
         json.dumps(metrics, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     config = vars(args).copy()
-    config["data_path"] = str(args.data_path.resolve())
-    config["output_dir"] = str(args.output_dir.resolve())
+    config["data_path"] = str(args.data_path)
+    config["output_dir"] = str(args.output_dir)
     config["split_sizes"] = list(args.split_sizes)
     config["architecture"] = "BondMessagePassing -> MeanAggregation -> RegressionFFN"
-    config["best_checkpoint"] = str(Path(checkpoint.best_model_path).resolve())
+    config["best_checkpoint"] = str(
+        args.output_dir / "checkpoints" / Path(checkpoint.best_model_path).name
+    )
     config["versions"] = {
         "chemprop": __import__("chemprop").__version__,
         "torch": torch.__version__,
@@ -225,7 +227,7 @@ def main() -> None:
     models.save_model(args.output_dir / "best_model.pt", best_model, args.target_columns)
 
     print(f"Best checkpoint: {checkpoint.best_model_path}")
-    print(f"Results: {args.output_dir.resolve()}")
+    print(f"Results: {args.output_dir}")
     print(json.dumps(metrics, indent=2, ensure_ascii=False))
 
 
